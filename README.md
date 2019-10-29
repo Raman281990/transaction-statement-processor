@@ -74,6 +74,12 @@ At the end of the processing, a report needs to be created which will display bo
 
  It return the csv response which can be saved from postman, send and download button.
  
+ ## Assumption
+ 
+ 1) Records have been read from the XML file.
+ 
+ 2) Assuming that the records already saved in the database will have unique reference id, hence records have not been             validates against the one in the database.
+ 
  ## Implementation
  
  Spring batch processes the records from the xml file and validates the records and saves the valid record in the database
