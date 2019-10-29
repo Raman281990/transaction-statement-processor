@@ -83,6 +83,10 @@ At the end of the processing, a report needs to be created which will display bo
  
  Valid Records are saved in TransactionStatement table.
  
+ Batch Reader: reades the records from XML file.
+ Validator Processor: validates the records based on validation and save the failed records in JobExceutionContext
+ Batch Writer: writes the valid records to the database
+ 
 
 
 
