@@ -3,36 +3,30 @@ This Application processes the transaction statements and generates report of fa
 
 Rabobank receives monthly deliveries of customer statement records. This information is delivered in two formats, CSV and XML. These records need to be validated.
 
-Input
+## Input
 The format of the file is a simplified version of the MT940 format. The format is as follows:
 
 Table 1. Record description
 Field	Description
-Transaction reference
 
-A numeric value
+Transaction reference A numeric value
 
 Account number
 
 An IBAN
 
-Start Balance
+Start Balance The starting balance in Euros
 
-The starting balance in Euros
-
-Mutation
-
-Either an addition (+) or a deduction (-)
+Mutation Either an addition (+) or a deduction (-)
 
 Description
 
 Free text
 
-End Balance
+End Balance The end balance in Euros
 
-The end balance in Euros
+## Output:
 
-Output
 There are two validations:
 
 all transaction references should be unique
